@@ -30,4 +30,22 @@
         android:layout_height="wrap_content"
         android:text="Open Barcode Activity" />
 
+    <Button
+        android:id="@+id/btnFaceDetectActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Face Detect Activity" />
+
+    <Button
+        android:id="@+id/btnLabelerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Image Label Activity" />
+
+    <Button
+        android:id="@+id/btnTextRecogActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Text Recognition Activity" />
+
 </LinearLayout>
