@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartLens">
-        <activity android:name=".facedetect.FaceDetectActivity"></activity>
+        <activity android:name=".imagelabeler.ImageLabelingActivity" />
+        <activity android:name=".facedetect.FaceDetectActivity" />
+        <activity android:name=".textrecog.TextRecognitionActivity" />
         <activity android:name=".BaseLensActivity" />
         <activity android:name=".CameraActivity" />
         <activity android:name=".MainActivity">

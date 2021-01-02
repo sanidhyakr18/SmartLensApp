@@ -7,6 +7,8 @@ import android.provider.MediaStore
 import androidx.appcompat.app.AppCompatActivity
 import com.sandystudios.smartlens.barcode.BarcodeActivity
 import com.sandystudios.smartlens.facedetect.FaceDetectActivity
+import com.sandystudios.smartlens.imagelabeler.ImageLabelingActivity
+import com.sandystudios.smartlens.textrecog.TextRecognitionActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +39,14 @@ class MainActivity : AppCompatActivity() {
 
         btnFaceDetectActivity.setOnClickListener {
             startActivity(Intent(this, FaceDetectActivity::class.java))
+        }
+
+        btnLabelerActivity.setOnClickListener {
+            startActivity(Intent(this, ImageLabelingActivity::class.java))
+        }
+
+        btnTextRecogActivity.setOnClickListener {
+            startActivity(Intent(this, TextRecognitionActivity::class.java))
         }
     }
 
