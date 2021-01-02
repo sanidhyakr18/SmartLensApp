@@ -12,7 +12,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_barcode.*
+import kotlinx.android.synthetic.main.activity_lens.*
 
 abstract class BaseLensActivity : AppCompatActivity() {
     companion object {
@@ -66,7 +66,7 @@ abstract class BaseLensActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_barcode)
+        setContentView(R.layout.activity_lens)
         askCameraPermission()
 
         btnStartScanner.setOnClickListener {

@@ -1,13 +1,12 @@
 package com.sandystudios.smartlens
 
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Bitmap
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.sandystudios.smartlens.barcode.BarcodeActivity
+import com.sandystudios.smartlens.facedetect.FaceDetectActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,11 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         btnTakeExtPhoto.setOnClickListener {
             val takePhotoIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            try {
-                startActivityForResult(takePhotoIntent, PHOTO_REQ_CODE)
-            } catch (e: ActivityNotFoundException) {
-                Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
-            }
+            startActivityForResult(takePhotoIntent, PHOTO_REQ_CODE)
         }
 
         btnCameraActivity.setOnClickListener {
@@ -38,6 +33,10 @@ class MainActivity : AppCompatActivity() {
 
         btnBarcodeActivity.setOnClickListener {
             startActivity(Intent(this, BarcodeActivity::class.java))
+        }
+
+        btnFaceDetectActivity.setOnClickListener {
+            startActivity(Intent(this, FaceDetectActivity::class.java))
         }
     }
 

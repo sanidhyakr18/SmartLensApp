@@ -1,4 +1,4 @@
-package com.sandystudios.smartlens.barcode
+ package com.sandystudios.smartlens.barcode
 
 import android.annotation.SuppressLint
 import android.util.Log
